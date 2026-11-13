@@ -1,0 +1,28 @@
+{
+    "Addr": "10.2.0.2:3333",
+    "Src": "10.1.0.2:7878",
+    "PktSize": 1000,
+    "TotalSession": 1,
+    "TotalStream": 2,
+    "TimeSlot": 50,
+    "TCP": false,
+    "UseDynamicPort": true,
+    "InfoStream": [
+        {
+            "TypeofApp": "Slotted",
+            "FileSize": 216.513,
+            "Distribution": {
+                "Type": "poisson",
+                "Rate": 14.4342
+            }
+        },
+        {
+            "TypeofApp": "Slotted",
+            "FileSize": 111.537,
+            "Distribution": {
+                "Type": "poisson",
+                "Rate": 7.435800000000001
+            }
+        }
+    ]
+}

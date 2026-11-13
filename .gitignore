@@ -1,0 +1,35 @@
+**/tmp/
+**/tmp_*/
+ns-allinone-3.38/ns-3.38/build/
+**/results/*
+
+ns-allinone-3.38/ns-3.38/build/
+ns-allinone-3.38/ns-3.38/cmake-cache/
+
+# Archivos zip y tar
+*.zip
+*.tar.xz
+*.txt
+*.log
+# Archivos de objetos de Git corruptos
+.git/objects/
+results
+
+
+
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Compilación / C++ / ns-3
+build/
+*.o
+*.so
+*.out
+
+# Logs y temporales
+*.log
+*.tmp
+.DS_Store

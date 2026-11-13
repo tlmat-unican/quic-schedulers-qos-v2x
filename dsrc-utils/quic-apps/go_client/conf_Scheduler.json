@@ -1,0 +1,24 @@
+{
+    "Scheduler_name": "RR",
+    "Weight": [
+        2,
+        1
+    ],
+    "Penalty": [
+        0,
+        0
+    ],
+    "GrowingFactor": 1,
+    "MLWDF_Params": [
+        {
+            "Gamma": 1,
+            "gammaW": 1,
+            "gammaQ": 1
+        },
+        {
+            "Gamma": 1,
+            "gammaW": 1,
+            "gammaQ": 1
+        }
+    ]
+}

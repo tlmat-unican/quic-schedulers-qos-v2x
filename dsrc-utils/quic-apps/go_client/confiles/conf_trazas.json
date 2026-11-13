@@ -1,0 +1,22 @@
+{
+    "Addr": "192.168.1.30:20001",
+    "Src": "192.168.1.2:4444",
+    "PktSize": 1400,
+    "TotalSession": 1,
+    "TotalStream": 1,
+    "TimeSlot": 50,
+    "TCP": false,
+    "InfoStream": [
+        {   
+            "TypeofApp":"Slotted",
+            "FileSize": 100  ,
+            "Distribution": {
+                "Type": "fixed",
+                "Rate": 27,
+                "Variance": null,
+                "Min": null,
+                "Max": null
+            }
+        }
+    ]
+}

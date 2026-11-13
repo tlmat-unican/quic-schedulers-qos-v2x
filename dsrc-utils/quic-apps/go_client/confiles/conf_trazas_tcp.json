@@ -1,0 +1,22 @@
+{
+    "Addr": "10.2.0.2:3333",
+    "Src": "10.1.0.2:7878",
+    "PktSize": 1400,
+    "TotalSession": 1,
+    "TotalStream": 1,
+    "TimeSlot": 50,
+    "TCP": true,
+    "InfoStream": [
+        {   
+            "TypeofApp":"Slotted",
+            "FileSize": 1  ,
+            "Distribution": {
+                "Type": "fixed",
+                "Rate": 27,
+                "Variance": null,
+                "Min": null,
+                "Max": null
+            }
+        }
+    ]
+}

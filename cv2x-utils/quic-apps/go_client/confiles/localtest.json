@@ -1,0 +1,48 @@
+{
+    "Addr": "127.0.0.1:20001",
+    "Src": "127.0.0.1:4444",
+    "PktSize": 1000,
+    "TotalSession": 1,
+    "TotalStream": 2,
+    "TimeSlot": 50,
+    "TCP": false,
+    "UseDynamicPort": true,
+    "InfoStream": [
+        
+         {
+        
+            "TypeofApp":"Slotted",
+            "FileSize": 1 ,
+            "Distribution": {
+                "Type": "fixed",
+                "Rate": 1,
+                "Variance": null,
+                "Min": null,
+                "Max": null
+            }
+        },
+        {
+        
+            "TypeofApp":"Slotted",
+            "FileSize": 1 ,
+              "Distribution": {
+                "Type": "fixed",
+                "Rate": 1,
+                "Variance": null,
+                "Min": null,
+                "Max": null
+            }
+        },
+        {   
+            "TypeofApp":"Slotted",
+            "FileSize": 20  ,
+            "Distribution": {
+                "Type": "poisson",
+                "Rate": 80,
+                "Variance": null,
+                "Min": null,
+                "Max": null
+            }
+        }
+    ]
+}

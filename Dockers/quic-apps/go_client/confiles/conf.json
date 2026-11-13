@@ -1,0 +1,38 @@
+{
+    "Addr": "127.0.0.1:3333",
+    "Src": "127.0.0.1:4444",
+    "PktSize": 1000,
+    "TotalSession": 1,
+    "TotalStream": 2,
+    "TimeSlot": 50,
+    "TCP": false,
+    "InfoStream": [
+        
+        {
+        
+            "TypeofApp":"OnOff",
+            "FileSize": 0.1 ,
+            "OnOff": {
+                "OnTime": 1,
+                "OffTime": 1,
+                "Type": "poisson",
+                "lambda": 10,
+                "PktSize": 1600
+
+            }
+        },
+        {
+        
+            "TypeofApp":"OnOff",
+            "FileSize": 0.1 ,
+            "OnOff": {
+                "OnTime": 1,
+                "OffTime": 2,
+                "Type": "fixed",
+                "lambda": 10,
+                "PktSize": 1400
+
+            }
+        }
+    ]
+}

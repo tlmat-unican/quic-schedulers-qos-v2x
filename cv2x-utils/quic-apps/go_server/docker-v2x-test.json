@@ -1,0 +1,33 @@
+{
+    "Addr": "192.168.1.5:4444",
+    "Src": "192.168.1.30:20001",
+    "PktSize": 1000,
+    "TotalSession": 1,
+    "TotalStream": 2,
+    "TimeSlot": 50,
+    "TCP": false,
+    "InfoStream": [
+                {
+                    "TypeofApp": "Slotted",
+                    "FileSize": 10,
+                    "Distribution": {
+                        "Type": "poisson",
+                        "Rate": 6,
+                        "Variance": null,
+                        "Min": null,
+                        "Max": null
+                    }
+                },
+                {
+                    "TypeofApp": "Slotted",
+                    "FileSize": 5,
+                    "Distribution": {
+                        "Type": "poisson",
+                        "Rate": 2,
+                        "Variance": null,
+                        "Min": null,
+                        "Max": null
+                    }
+                }
+            ]
+}

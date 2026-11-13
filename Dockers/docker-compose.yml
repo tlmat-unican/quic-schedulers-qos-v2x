@@ -1,0 +1,44 @@
+services:
+  sender:
+    build: .
+    image: ns3docker
+    privileged: true
+    container_name: sender
+    command: ash -c "python3 /home/AdaptRouteTable.py -d 10.2.0.0/24 -g 10.1.0.3 -i eth0 && tail -F anything"
+    restart: always
+    networks:
+      leftnet:
+        ipv4_address: 10.1.0.2
+    volumes:
+      - ./:/home/
+
+  receiver:
+    build: .
+    image: ns3docker
+    privileged: true
+    container_name: receiver
+    command: ash -c "python3 /home/AdaptRouteTable.py -d 10.1.0.0/24 -g 10.2.0.3 -i eth0 && tail -F anything"
+    restart: always
+    networks:
+      rightnet:
+        ipv4_address: 10.2.0.2
+    volumes:
+      - ./:/home/
+
+networks:
+  leftnet:
+    driver: bridge
+    driver_opts:
+      com.docker.network.bridge.enable_ip_masquerade: "true"
+      com.docker.network.bridge.name: br-left
+    ipam:
+      config:
+        - subnet: 10.1.0.0/24
+  rightnet:
+    driver: bridge
+    driver_opts:
+      com.docker.network.bridge.enable_ip_masquerade: "true"
+      com.docker.network.bridge.name: br-right
+    ipam:
+      config:
+        - subnet: 10.2.0.0/24
